@@ -1,0 +1,45 @@
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  flex-basis: calc(
+    33.3333% - 10px
+  ); /* Width of each column minus some margin */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.project-content {
+  padding: 15px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.project-thumbnail {
+  max-width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+.project-title,
+.project-summary,
+.project-source {
+  margin-bottom: 10px;
+}
+
+.project-source {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-source:hover {
+  background-color: #0056b3;
+}
