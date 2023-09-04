@@ -6,27 +6,79 @@
     <title>My Resume</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
   </head>
 
   <body>
-    <!-- Header Section -->
-    <header class="header"></header>
+    <header class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto">
+        <h1 class="text-2xl font-bold">My Portfolio</h1>
+        <nav class="mt-3">
+          <ul class="flex space-x-4">
+            <li>
+              <a href="https://www.akibanowebsite.com/" class="hover:underline"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://projects.akibanowebsite.com/"
+                class="hover:underline"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://resume.akibanowebsite.com/"
+                class="hover:underline"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <!-- Resume Section -->
-    <div class="resume" id="home">
-      <h1>Name: Gunma chan</h1>
-      <h2>Web Developer</h2>
-      <p>Address: tsurumaukaatachino gunmaken</p>
-      <p>Email: gunmachan.com</p>
+    <div class="container mx-auto p-10">
+      <div class="flex items-center space-x-5">
+        <img
+          src="profile_image_url_here"
+          alt="Profile"
+          class="w-32 h-32 rounded-full"
+        />
+        <div>
+          <h1 class="text-2xl font-bold">Gunma-chan</h1>
+          <p>Frontend Developer at ABC Corp</p>
+          <p>City, Country</p>
+        </div>
+      </div>
 
-      <h3>Education</h3>
-      <p>cs degree at MIT</p>
+      <section class="mt-10">
+        <h2 class="text-xl font-semibold">About</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+      </section>
 
-      <h3>Work Experience</h3>
-      <p>working hard in prefectural office of gunma</p>
+      <section class="mt-10">
+        <h2 class="text-xl font-semibold">Experience</h2>
+        <div>
+          <h3>Frontend Developer - ABC Corp</h3>
+          <p>Jan 2020 - Present</p>
+          <p>Description of the job and responsibilities...</p>
+        </div>
+      </section>
 
-      <button id="download">Download MY RESUME</button>
+      <section class="mt-10">
+        <h2 class="text-xl font-semibold">Education</h2>
+        <div>
+          <h3>Computer Science, XYZ University</h3>
+          <p>2015 - 2019</p>
+        </div>
+        {/* Repeat similar divs for multiple education entries */}
+      </section>
     </div>
 
     <!-- Footer Section -->
@@ -35,6 +87,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="../../shared/makeheader.js"></script>
   </body>
 </html>
